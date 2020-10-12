@@ -1,0 +1,88 @@
+Alphabet:
+    a. Upper (A-Z) and lower case letters (a-z) of the English alphabet
+    b. Underline character "_";
+    c. Decimal digits (0-9);
+
+Lexic:
+     a. operator:
+        arithmetic: +, -, *, /, %;
+        assignment: =;
+        boolean logic: and, or, not;
+        comparison: ==, !=, >=, <=, >, <;
+    b. separators:
+        [], {}, :, ;, space
+    c. reserved words:
+        break continue pass do if else while return start print read
+        Integer String Float Boolean
+    d. identifiers:
+          -a sequence of letters and  digits, such that the first character is a letter; the rule is:
+            identifier ::= letter | letter{letter}{digit}
+            letter ::= "A" | "B" | . ..| "Z"
+            digit ::= "0" | "1" |...| "9"
+    e. constants:
+        integer:
+            integer ::= "0" | ["+"|"-"] ("1"|"2"|...|"9") {"0"|"1"|"2"|...|"9"}
+        char:
+            char ::= alphanumeric
+        float:
+            float ::= 
+                ["+", "-"] ("1"|"2"|...|"9") rest_of_the_float | 
+                ("1"|"2"|...|"9") rest_of_the_float |
+                "0"
+        string:
+            string ::= {(alphanumeric | " ")}
+
+Syntax:
+    The words - predefined tokens are specified between " and ":
+    
+    program ::= "start" declaration_list ";" compound_statement "."
+
+    declaration_list ::= declaration | declaration ";" declaration_list
+
+    declaration ::= type identifier
+
+    identifier ::= letter | letter{letter}{digit}
+            
+    letter ::= "A" | "B" | . ..| "Z"
+
+    digit ::= "0" | "1" |...| "9"
+
+    compound_type ::= "Integer" | "Char" | "Float" | "String"
+
+    array_declaration ::= type1 "[" number_of_elements "]"
+
+    array_access ::= identifier "[" number | identifier "]"
+
+    type  ::= type1|array_declaration
+
+    compound_statement ::= "{" statement_list "}"
+
+    statement_list ::= statement | statement statement_list
+
+    statement ::= simple_statement ";" | structured_statement 
+
+    simple_statement ::= assignment_statement | IO_statement
+
+    assignment_statement ::= identifier "=" expression
+
+    expression ::= expression "+" term | term
+
+    term ::= term operand [factor | array_access]  | factor
+
+    factor ::= "(" expression ")" | identifier
+
+    IO_statement ::= "read" | "write" "(" identifier ")"
+
+    structured_statement ::= compound_statement | if_statement | while_statement
+
+    if_statement ::= "if" condition compound_statement "else" compound_statement
+
+    while_statement ::= "while" condition compound_statement
+
+    condition ::= "(" expression relation expression ")"
+
+    relation ::= "<" | "<=" | "==" | "!=" | ">=" | ">"
+            
+    operand ::= "+" | "-" | "*" | "/"
+
+

@@ -1,0 +1,9 @@
+1. All strings composed of "1" and "2" (ex: 1, 2, 12, 21, 12221, etc)
+
+2. No, it could start with 0
+
+3. 8 (no spaces)
+
+4. PIF, syntatcial and lexical errors
+
+5. that's a syntax error, not a lexical one
