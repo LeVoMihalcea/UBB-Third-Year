@@ -1,0 +1,21 @@
+read 1
+write 2
+not 3
+break 4
+start 5
+Char 6
+continue 7
+do 8
+else 9
+float 10
+for 11
+while 12
+if 13
+pass 14
+return 15
+Integer 16
+String 17
+Float 18
+Boolean 19
+'+', '-', '*', '/', '%', '=', '==', '!=', '>=', '<=', '>', '<', '[', ']',
+                               '{', '}', '(', ')', ';', ':', ' ', '"', "&&", "||"

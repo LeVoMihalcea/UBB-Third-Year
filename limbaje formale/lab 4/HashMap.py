@@ -54,4 +54,8 @@ class HashMap:
                 raise AwesomeTableException("Given key does not exist in the table")
 
     def __str__(self):
-        return str(self.__table)
+        to_return = '---Symbol Table--- (hashtable)\n'
+        for i in range(len(self.__table)):
+            if self.__table[i] is not None:
+                to_return += str(i) + ". " + str(self.__table[i]) + '\n'
+        return to_return

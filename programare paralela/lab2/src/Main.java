@@ -6,11 +6,8 @@ public class Main {
     public static void main(String[] args)
             throws InterruptedException
     {
-        // Object of a class that has both produce() 
-        // and consume() methods 
-        final PC pc = new PC();
+        final ProducerConsumer pc = new ProducerConsumer();
 
-        // Create producer thread 
         Thread t1 = new Thread(new Runnable() {
             @Override
             public void run()
@@ -24,7 +21,6 @@ public class Main {
             }
         });
 
-        // Create consumer thread 
         Thread t2 = new Thread(new Runnable() {
             @Override
             public void run()
@@ -38,36 +34,28 @@ public class Main {
             }
         });
 
-        // Start both threads 
         t1.start();
         t2.start();
 
-        // t1 finishes before t2 
         t1.join();
         t2.join();
     }
 
-    // This class has a list, producer (adds items to list 
-    // and consumber (removes items). 
-    public static class PC {
+    public static class ProducerConsumer {
 
-        // Create a list shared by producer and consumer 
-        // Size of list is 2. 
         LinkedList<Integer> list = new LinkedList<>();
         int capacity = 3;
         Random random = new Random();
 
-        // Function called by producer thread 
         public void produce() throws InterruptedException
         {
             int value = 0;
             while (true) {
                 synchronized (this)
                 {
-                    // producer thread waits while list 
-                    // is full 
-                    while (list.size() == capacity)
+                    while (list.size() == capacity) {
                         wait();
+                    }
 
                     int number1 = random.nextInt(10);
                     int number2 = random.nextInt(10);
@@ -76,41 +64,31 @@ public class Main {
 
                     System.out.println(String.format("Producer: %d %d %d", number1, number2, number1 * number2));
 
-                    // notifies the consumer thread that 
-                    // now it can start consuming 
                     notify();
 
-                    // makes the working of program easier 
-                    // to  understand 
-                    Thread.sleep(100);
+//                    Thread.sleep(100);
                 }
             }
         }
 
-        // Function called by consumer thread 
         public void consume() throws InterruptedException
         {
             int sum = 0;
             while (true) {
                 synchronized (this)
                 {
-                    // consumer thread waits while list 
-                    // is empty 
-                    while (list.size() == 0)
+                    while (list.size() == 0) {
                         wait();
+                    }
 
-                    // to retrive the ifrst job in the list 
                     int val = list.removeFirst();
                     sum += val;
 
-                    System.out.println("Consumer consumed - "
-                            + val + " and current sum is " + sum);
+                    System.out.println("Consumer consumed - " + val + " and current sum is " + sum);
 
-                    // Wake up producer thread 
                     notify();
 
-                    // and sleep 
-                    Thread.sleep(100);
+//                    Thread.sleep(100);
                 }
             }
         }

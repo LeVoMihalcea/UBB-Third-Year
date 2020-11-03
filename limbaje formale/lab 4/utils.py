@@ -1,10 +1,15 @@
 import re
 
+reservedWords = ['read', 'write', 'not', 'break', 'start', 'Char', 'continue', 'do', 'else',
+                 'float', 'for', 'while', 'if', 'pass', 'return', 'Integer', 'String', 'Float', 'Boolean']
+reservedOperatorsSeparators = ['+', '-', '*', '/', '%', '=', '==', '!=', '>=', '<=', '>', '<', '[', ']',
+                               '{', '}', '(', ')', ';', ':', ' ', '"', "&&", "||"]
 
-def is_constant_or_identifier(token):
+def is_float_or_identifier(token):
     try:
-        int(token)
+        if (token[0] == '0' and (len(token) > 1 or token[1] == '.')):
+            return False
+        float(token)
     except:
-        return re.match("^[0-9\"']", token) is None or re.match('^"[a-zA-Z0-9]+"$', token) is not None \
-                or re.match("^'[a-zA-Z0-9]'$", token) is not None
+        return re.search("[a-zA-Z0-9\.\&]*", token).group()
     return True
