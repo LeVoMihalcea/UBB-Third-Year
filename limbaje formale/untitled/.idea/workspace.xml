@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="02817bbf-f8e1-4dce-9a87-e707fe13d4f7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../lab 4/FiniteAutomataChecker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab 4/documentation.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab 4/input - output.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab 4/input - output.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab 4/~$put - output.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab 1/lab1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../lab 1/lab1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab 2/lexic.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab 2/lexic.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab 4/Documentation.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../lab 4/Documentation.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab 4/HashMap.py" beforeDir="false" afterPath="$PROJECT_DIR$/../lab 4/HashMap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab 4/PIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/../lab 4/PIF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab 4/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../lab 4/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab 4/program_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/../lab 4/program_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab 4/program_1.out" beforeDir="false" afterPath="$PROJECT_DIR$/../lab 4/program_1.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab 4/program_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/../lab 4/program_2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab 4/program_2.out" beforeDir="false" afterPath="$PROJECT_DIR$/../lab 4/program_2.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab 4/program_3.c" beforeDir="false" afterPath="$PROJECT_DIR$/../lab 4/program_3.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab 4/program_3.out" beforeDir="false" afterPath="$PROJECT_DIR$/../lab 4/program_3.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab 4/program_4.c" beforeDir="false" afterPath="$PROJECT_DIR$/../lab 4/program_4.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab 4/program_4.out" beforeDir="false" afterPath="$PROJECT_DIR$/../lab 4/program_4.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab 4/tokens.in" beforeDir="false" afterPath="$PROJECT_DIR$/../lab 4/tokens.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab 4/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../lab 4/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab 4/~$cumentation.docx" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1juN0ORF0i9bbh1LCVJPUXn7rZY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02817bbf-f8e1-4dce-9a87-e707fe13d4f7" name="Default Changelist" comment="" />
+      <created>1604649792276</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604649792276</updated>
+      <workItem from="1604649793683" duration="1112000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>

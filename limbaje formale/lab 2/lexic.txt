@@ -17,20 +17,22 @@ Lexic:
     d. identifiers:
           -a sequence of letters and  digits, such that the first character is a letter; the rule is:
             identifier ::= letter | letter{letter}{digit}
-            letter ::= "A" | "B" | . ..| "Z"
+            letter ::= "A" | "B" | . ..| "Z" | "a" ... | "z"
             digit ::= "0" | "1" |...| "9"
     e. constants:
         integer:
             integer ::= "0" | ["+"|"-"] ("1"|"2"|...|"9") {"0"|"1"|"2"|...|"9"}
         char:
-            char ::= alphanumeric
+            char ::= """ alphanumeric """
         float:
             float ::= 
-                ["+", "-"] ("1"|"2"|...|"9") rest_of_the_float | 
+                ["+" | "-"] ("1"|"2"|...|"9") rest_of_the_float | 
                 ("1"|"2"|...|"9") rest_of_the_float |
                 "0"
+            rest_of_the_float ::= {digit} ["." digit {digit}]
+            alphanumeric = letter | digit
         string:
-            string ::= {(alphanumeric | " ")}
+            string ::= {("""alphanumeric""" | " ")}
 
 Syntax:
     The words - predefined tokens are specified between " and ":
@@ -41,19 +43,15 @@ Syntax:
 
     declaration ::= type identifier
 
-    identifier ::= letter | letter{letter}{digit}
-            
-    letter ::= "A" | "B" | . ..| "Z"
-
-    digit ::= "0" | "1" |...| "9"
-
     compound_type ::= "Integer" | "Char" | "Float" | "String"
 
     array_declaration ::= type1 "[" number_of_elements "]"
 
+    number_of_elements ::= integer
+
     array_access ::= identifier "[" number | identifier "]"
 
-    type  ::= type1|array_declaration
+    type  ::= type1 | array_declaration
 
     compound_statement ::= "{" statement_list "}"
 
@@ -71,7 +69,7 @@ Syntax:
 
     factor ::= "(" expression ")" | identifier
 
-    IO_statement ::= "read" | "write" "(" identifier ")"
+    IO_statement ::= ["read" | "write"] "(" identifier ")"
 
     structured_statement ::= compound_statement | if_statement | while_statement
 

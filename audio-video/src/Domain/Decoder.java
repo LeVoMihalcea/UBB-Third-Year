@@ -27,8 +27,8 @@ public class Decoder {
             Image image = new Image(width, height);
 
             image.setY(decodeSubmatrix(encodedY));
-            image.setU(decodeSubmatrix(upsampling(encodedU)));
-            image.setV(decodeSubmatrix(upsampling(encodedV)));
+            image.setU(decodeSubmatrix(enlarge(encodedU)));
+            image.setV(decodeSubmatrix(enlarge(encodedV)));
 
             image.convertToRGB();
             image.printToFile();
@@ -39,7 +39,7 @@ public class Decoder {
 
     }
 
-    private List<Submatrix> upsampling(List<Submatrix> encoded) {
+    private List<Submatrix> enlarge(List<Submatrix> encoded) {
         List<Submatrix> resized = new ArrayList<>();
         encoded.forEach(b -> resized.add(resizeBlock(b)));
         return resized;

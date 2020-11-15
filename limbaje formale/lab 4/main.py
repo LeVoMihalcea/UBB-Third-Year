@@ -2,13 +2,13 @@ import sys
 import re
 from HashMap import HashMap
 from PIF import PIF
-from utils import is_float_or_identifier, reservedWords, reservedOperatorsSeparators
+from utils import is_float_or_identifier, reservedWords, reservedOperatorsSeparators, readFiniteAutomata
 
 
 class Scanner:
     pif = PIF()
     st = HashMap()
-
+    fa = readFiniteAutomata()
     def __init__(self):
         if len(sys.argv) != 2:
             raise Exception("analyze <input_file_name>")
@@ -20,25 +20,24 @@ class Scanner:
                     line = f.readline()
                     while line:
                         print(line)
-                        split = re.split('([^A-Za-zA-Z_0-9&.,\"|-])', line)
+                        split = re.split('([^A-Za-zA-Z_0-9&.,=><\|-])', line)
                         split = list(filter(lambda x: x is not None and x != '', map(lambda x: x.strip(), split)))
                         print(split)
                         buffer = ""
                         for token in split:
-                            if token[-1] == '"':
-                                buffer += + " " + token
-                                token = buffer
-                                buffer = ""
-                            if buffer != "":
-                                buffer += + " " + token
-                                continue
-                            if token[0] == '"':
-                                buffer += token
+                            if token == '"':
+                                if buffer == "":
+                                    buffer += token + " "
+                                else:
+                                    token = buffer[2:]
+                                    buffer = ""
+                            elif buffer != "":
+                                buffer += token + " "
                                 continue
 
                             if token in reservedWords or token in reservedOperatorsSeparators:
-                                self.pif[token] = -1
-                            elif is_float_or_identifier(token):
+                                self.pif[token] = 0
+                            elif is_float_or_identifier(self.fa, token):
                                 index = self.st.add(token)
                                 self.pif[token] = index
                             else:
@@ -51,7 +50,7 @@ class Scanner:
                     output.write("\n")
                     output.write(str(self.st))
             except Exception as e:
-                raise e
+                output.write(str(e))
 
 
 scanner = Scanner()

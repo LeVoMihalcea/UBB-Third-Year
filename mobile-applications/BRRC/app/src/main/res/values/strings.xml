@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BRRC</string>
+    <string name="add_a_beer_text">Add a Beer</string>
+    <string name="beers_near_you">Beers near you:</string>
+    <string name="edit_this_beer">Edit this beer</string>
+    <string name="textview">TextView</string>
+    <string name="beer_name">Beer Name</string>
+    <string name="delete">Delete</string>
+    <string name="finish_editing">Finish Editing</string>
+    <string name="price">Price</string>
+    <string name="beer_type">Beer Type</string>
+    <string name="pub">Pub</string>
+    <string name="name">Name</string>
+    <string name="_10_ron">10 RON</string>
+    <string name="pub_name">Pub Name</string>
+    <string name="delete_this_beer">Delete this beer?</string>
+    <string name="add_a_new_beer">Add a new Beer</string>
+    <string name="add_the_beer">Add the beer</string>
+</resources>

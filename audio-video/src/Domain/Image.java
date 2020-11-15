@@ -168,21 +168,21 @@ public class Image {
     public void convertToRGB() {
         for (int line = 0; line < imageHeight; line++) {
             for (int column = 0; column < imageWidth; column++) {
-                double R = y[line][column] + 1.402 * (v[line][column] - 128);
-                double G = y[line][column] - 0.344136 * (u[line][column] - 128) - 0.714136 * (v[line][column] - 128);
-                double B = y[line][column] + 1.7790 * (u[line][column] - 128);
+                double r = y[line][column] + 1.402 * (v[line][column] - 128);
+                double g = y[line][column] - 0.344136 * (u[line][column] - 128) - 0.714136 * (v[line][column] - 128);
+                double b = y[line][column] + 1.7790 * (u[line][column] - 128);
 
-                if (R > 255) R = 255.0;
-                if (G > 255) G = 255.0;
-                if (B > 255) B = 255.0;
+                if (r > 255) r = 255.0;
+                if (g > 255) g = 255.0;
+                if (b > 255) b = 255.0;
 
-                if (R < 0) R = 0.0;
-                if (G < 0) G = 0.0;
-                if (B < 0) B = 0.0;
+                if (r < 0) r = 0.0;
+                if (g < 0) g = 0.0;
+                if (b < 0) b = 0.0;
 
-                this.r[line][column] = (int) R;
-                this.g[line][column] = (int) G;
-                this.b[line][column] = (int) B;
+                this.r[line][column] = (int) r;
+                this.g[line][column] = (int) g;
+                this.b[line][column] = (int) b;
             }
         }
     }

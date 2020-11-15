@@ -70,12 +70,12 @@ start(): Integer{
 
 start(): Integer{
 	Integer[] my@array = [1, 2, 3, 4, 5]; //prima eroare
-	Integer array%length = 5, i = 0; //a doua eroare
+	Integer array_length = 5, i = 0; //a doua eroare
 	Integer sum = 0;
 
 
 	for(i = 0; i < array_length; i++){
-		sum = sum + my_array[i];
+		sum = sum + my_array[ĂĂĂĂĂĂĂ];
 	}
 
 	print(sum);
