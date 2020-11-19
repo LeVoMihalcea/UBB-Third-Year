@@ -5,32 +5,33 @@ start --- 0
 : --- 0
 Integer --- 0
 { --- 0
-number_1 --- 37
+number_1 --- 35
 = --- 0
-0 --- 0
+1.5 --- 3
 ; --- 0
-number_2 --- 34
-20.05 --- 29
-number_3 --- 20
-30 --- 8
+number_2 --- 4
+20 --- 12
+number_3 --- 6
+30 --- 2
 if --- 0
 > --- 0
 && --- 0
-print --- 32
+print --- 43
 } --- 0
 else --- 0
 >= --- 0
 <= --- 0
 " --- 0
-Values are not unique  --- 21
+Values are not unique  --- 42
 return --- 0
+0 --- 2
 
 ---Symbol Table--- (hashtable)
-0. ['0']
-8. ['30']
-20. ['number_3']
-21. ['Values are not unique ']
-29. ['20.05']
-32. ['print']
-34. ['number_2']
-37. ['number_1']
+2. ['30', '0']
+3. ['1.5']
+4. ['number_2']
+6. ['number_3']
+12. ['20']
+35. ['number_1']
+42. ['Values are not unique ']
+43. ['print']

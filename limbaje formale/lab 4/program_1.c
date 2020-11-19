@@ -1,6 +1,6 @@
 start(): Integer{
-    Integer number_1 = 0;
-    Integer number_2 = 20.05;
+    Integer number_1 = 1.5;
+    Integer number_2 = 20;
     Integer number_3 = 30;
     if (number_1 > number_2 && number_1 > number_3){
         print(number_1);

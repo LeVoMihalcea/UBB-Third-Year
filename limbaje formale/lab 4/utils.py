@@ -8,28 +8,23 @@ reservedOperatorsSeparators = ['+', '-', '*', '/', '%', '=', '==', '!=', '>=', '
                                '{', '}', '(', ')', ';', ':', ' ', '"', "&&", "||", '"']
 
 
-def is_float_or_identifier(fa, token):
-    try:
-        if token[0] == '0' and (len(token) > 1 or token[1] == '.'):
-            return False
+def is_float_or_identifier(fa_list, token):
+    for fa in fa_list:
         if isSequenceAccepted(fa, fa.start, list(token)):
-            print("number is integer")
+            print(token)
             return True
-        return True
-    except:
-        return re.search("[a-zA-Z0-9 \.\&]*", token).group()
-    return True
+    return False
 
 
-def readFiniteAutomata():
-    with open('input.txt', 'r') as f:
+def readFiniteAutomata(filename):
+    with open(filename, 'r') as f:
         states = f.readline().strip().split(' ')
         alphabet = f.readline().strip().split(' ')
         start = f.readline().strip().split(' ')
         finals = f.readline().strip().split(' ')
         aux_transitions = f.readline().strip().split(';')
         transitions = []
-        for transition in aux_transitions:
+        for transition in aux_transitions[:-1]:
             transition = transition.split(' ')
             transitions.append([(transition[0], transition[1]), transition[2]])
         finiteAutomata = FiniteAutomata(states, alphabet, start, finals, transitions)
@@ -42,6 +37,7 @@ def ifFADeterministic(fa):
     for elem in fa.transitions:
         current = [elem[0][0], elem[1]]
         if current in transitions:
+            print(current, transitions)
             return False
         else:
             transitions.append(current)
@@ -70,9 +66,9 @@ def printMenu(fa):
     if not deterministic:
         return
 
-    print("sequence: abbci; accepted:", isSequenceAccepted(fa, fa.start, "a b b c i".split()))
-    print("sequence: abbc; accepted:", isSequenceAccepted(fa, fa.start, "a b b c".split()))
-    print("sequence: abbg; accepted:", isSequenceAccepted(fa, fa.start, "a b b g".split()))
+    # print("sequence: abbci; accepted:", isSequenceAccepted(fa, fa.start, "a b b c i".split()))
+    # print("sequence: abbc; accepted:", isSequenceAccepted(fa, fa.start, "a b b c".split()))
+    # print("sequence: abbg; accepted:", isSequenceAccepted(fa, fa.start, "a b b g".split()))
 
     print("FA Menu")
     print("1. states")
@@ -96,11 +92,14 @@ def printMenu(fa):
             print(fa.transitions)
         elif command == 6:
             sequence = input("sequence:")
-            print("sequence: abbci; accepted:", isSequenceAccepted(fa, fa.start, list(sequence)))
+            print("sequence:", sequence, "accepted:", isSequenceAccepted(fa, fa.start, list(sequence)))
         else:
             print("invalid command")
         command = int(input(">"))
 
 
-# fa = readFiniteAutomata()
+# fa = readFiniteAutomata("fa_input/string.in")
+# print(fa.transitions)
+# fa.transitions.append([('q1', 'q1'), ' '])
+# print(fa.transitions)
 # printMenu(fa)
