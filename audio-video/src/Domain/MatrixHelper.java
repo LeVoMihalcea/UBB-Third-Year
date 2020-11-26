@@ -49,9 +49,75 @@ public class MatrixHelper {
 
         for(int i_index=0; i_index<8; i_index++){
             for(int j_index=0; j_index<8; j_index++){
-                data.getData()[i_index][j_index] = (int) matrix[i_index + i][j_index + j];
+                data.getData()[i_index][j_index] = matrix[i_index + i][j_index + j];
             }
         }
         return data;
+    }
+
+    public static void centerAround0(List<Submatrix> encoded) {
+        for (Submatrix submatrix: encoded)
+            for (int i = 0; i < 8; i++)
+                for (int j = 0; j < 8; j++)
+                    submatrix.getData()[i][j] -= 128.0;
+    }
+
+    public static double[][] computeCoefficients(double[][] data, double[][] quantization_table) {
+        double[][] result = new double[8][8];
+        double aux;
+        for (int i = 0; i < 8; i++)
+            for (int j = 0; j < 8; j++) {
+                aux = data[i][j] / quantization_table[i][j];
+                if (aux < 0)
+                    result[i][j] = (int) Math.ceil(aux);
+                else
+                    result[i][j] = (int) Math.floor(aux);
+            }
+
+        return result;
+    }
+
+    public static List<Submatrix> resize(List<Submatrix> encoded) {
+        List<Submatrix> resized = new ArrayList<>();
+        encoded.forEach(b -> resized.add(resizeBlock(b)));
+        return resized;
+    }
+
+    private static Submatrix resizeBlock(Submatrix submatrix) {
+        Submatrix result = new Submatrix(8,
+                submatrix.getType());
+        int line = 0;
+        int column = 0;
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                double value = submatrix.getData()[i][j];
+                result.getData()[line][column] = value;
+                result.getData()[line][column + 1] = value;
+                result.getData()[line + 1][column] = value;
+                result.getData()[line + 1][column + 1] = value;
+                column += 2;
+            }
+            line += 2;
+            column = 0;
+        }
+
+        return result;
+    }
+
+    public static double[][] compute(double[][] data, double[][] quantization_table) {
+        double[][] result = new double[8][8];
+
+        for (int i = 0; i < 8; i++)
+            for (int j = 0; j < 8; j++)
+                result[i][j] = (int) (data[i][j] * quantization_table[i][j]);
+
+        return result;
+    }
+
+    private void centerAround128(List<Submatrix> encoded) {
+        for (Submatrix block: encoded)
+            for (int i = 0; i < 8; i++)
+                for (int j = 0; j < 8; j++)
+                    block.getData()[i][j] += 128.0;
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace lab4.shared
+﻿using System;
+
+namespace lab4.shared
 {
     public class HttpUtils {
         public static readonly int HTTP_PORT = 80;

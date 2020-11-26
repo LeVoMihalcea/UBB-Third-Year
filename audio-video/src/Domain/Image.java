@@ -1,6 +1,7 @@
 package Domain;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.Objects;
 
 public class Image {
@@ -20,6 +21,15 @@ public class Image {
         this.fileName = fileName;
         this.readImage(fileName);
         this.convertToYUV();
+    }
+
+    @Override
+    public String toString() {
+        return "Image{" +
+                "y=" + Arrays.toString(y) +
+                ", u=" + Arrays.toString(u) +
+                ", v=" + Arrays.toString(v) +
+                '}';
     }
 
     public Image(int width, int height) {
