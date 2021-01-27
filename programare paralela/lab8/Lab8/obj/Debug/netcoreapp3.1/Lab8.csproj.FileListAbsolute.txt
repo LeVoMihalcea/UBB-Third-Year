@@ -1,0 +1,13 @@
+C:\Users\Istvan\source\repos\Lab8\Lab8\bin\Debug\netcoreapp3.1\Lab8.exe
+C:\Users\Istvan\source\repos\Lab8\Lab8\obj\Debug\netcoreapp3.1\Lab8.AssemblyInfoInputs.cache
+C:\Users\Istvan\source\repos\Lab8\Lab8\obj\Debug\netcoreapp3.1\Lab8.AssemblyInfo.cs
+C:\Users\Istvan\source\repos\Lab8\Lab8\bin\Debug\netcoreapp3.1\Lab8.deps.json
+C:\Users\Istvan\source\repos\Lab8\Lab8\bin\Debug\netcoreapp3.1\Lab8.runtimeconfig.json
+C:\Users\Istvan\source\repos\Lab8\Lab8\bin\Debug\netcoreapp3.1\Lab8.runtimeconfig.dev.json
+C:\Users\Istvan\source\repos\Lab8\Lab8\bin\Debug\netcoreapp3.1\Lab8.dll
+C:\Users\Istvan\source\repos\Lab8\Lab8\bin\Debug\netcoreapp3.1\Lab8.pdb
+C:\Users\Istvan\source\repos\Lab8\Lab8\bin\Debug\netcoreapp3.1\MPI.dll
+C:\Users\Istvan\source\repos\Lab8\Lab8\obj\Debug\netcoreapp3.1\Lab8.csprojAssemblyReference.cache
+C:\Users\Istvan\source\repos\Lab8\Lab8\obj\Debug\netcoreapp3.1\Lab8.csproj.CopyComplete
+C:\Users\Istvan\source\repos\Lab8\Lab8\obj\Debug\netcoreapp3.1\Lab8.dll
+C:\Users\Istvan\source\repos\Lab8\Lab8\obj\Debug\netcoreapp3.1\Lab8.pdb

@@ -1,0 +1,28 @@
+C:\Users\Istvan\source\repos\Lab7\Lab7\bin\Debug\netcoreapp3.1\Lab7.exe
+C:\Users\Istvan\source\repos\Lab7\Lab7\obj\Debug\netcoreapp3.1\Lab7.csprojAssemblyReference.cache
+C:\Users\Istvan\source\repos\Lab7\Lab7\obj\Debug\netcoreapp3.1\Lab7.AssemblyInfoInputs.cache
+C:\Users\Istvan\source\repos\Lab7\Lab7\obj\Debug\netcoreapp3.1\Lab7.AssemblyInfo.cs
+C:\Users\Istvan\source\repos\Lab7\Lab7\bin\Debug\netcoreapp3.1\Lab7.deps.json
+C:\Users\Istvan\source\repos\Lab7\Lab7\bin\Debug\netcoreapp3.1\Lab7.runtimeconfig.json
+C:\Users\Istvan\source\repos\Lab7\Lab7\bin\Debug\netcoreapp3.1\Lab7.runtimeconfig.dev.json
+C:\Users\Istvan\source\repos\Lab7\Lab7\bin\Debug\netcoreapp3.1\Lab7.dll
+C:\Users\Istvan\source\repos\Lab7\Lab7\bin\Debug\netcoreapp3.1\Lab7.pdb
+C:\Users\Istvan\source\repos\Lab7\Lab7\bin\Debug\netcoreapp3.1\MPI.dll
+C:\Users\Istvan\source\repos\Lab7\Lab7\obj\Debug\netcoreapp3.1\Lab7.csproj.CopyComplete
+C:\Users\Istvan\source\repos\Lab7\Lab7\obj\Debug\netcoreapp3.1\Lab7.dll
+C:\Users\Istvan\source\repos\Lab7\Lab7\obj\Debug\netcoreapp3.1\Lab7.pdb
+C:\Users\leomi\Desktop\UBB-Third-Year\programare paralela\lab7\Lab7\bin\Debug\netcoreapp3.1\Lab7.exe
+C:\Users\leomi\Desktop\UBB-Third-Year\programare paralela\lab7\Lab7\bin\Debug\netcoreapp3.1\Lab7.deps.json
+C:\Users\leomi\Desktop\UBB-Third-Year\programare paralela\lab7\Lab7\bin\Debug\netcoreapp3.1\Lab7.runtimeconfig.json
+C:\Users\leomi\Desktop\UBB-Third-Year\programare paralela\lab7\Lab7\bin\Debug\netcoreapp3.1\Lab7.runtimeconfig.dev.json
+C:\Users\leomi\Desktop\UBB-Third-Year\programare paralela\lab7\Lab7\bin\Debug\netcoreapp3.1\Lab7.dll
+C:\Users\leomi\Desktop\UBB-Third-Year\programare paralela\lab7\Lab7\bin\Debug\netcoreapp3.1\Lab7.pdb
+C:\Users\leomi\Desktop\UBB-Third-Year\programare paralela\lab7\Lab7\bin\Debug\netcoreapp3.1\MPI.dll
+C:\Users\leomi\Desktop\UBB-Third-Year\programare paralela\lab7\Lab7\obj\Debug\netcoreapp3.1\Lab7.csprojAssemblyReference.cache
+C:\Users\leomi\Desktop\UBB-Third-Year\programare paralela\lab7\Lab7\obj\Debug\netcoreapp3.1\Lab7.AssemblyInfoInputs.cache
+C:\Users\leomi\Desktop\UBB-Third-Year\programare paralela\lab7\Lab7\obj\Debug\netcoreapp3.1\Lab7.AssemblyInfo.cs
+C:\Users\leomi\Desktop\UBB-Third-Year\programare paralela\lab7\Lab7\obj\Debug\netcoreapp3.1\Lab7.csproj.CoreCompileInputs.cache
+C:\Users\leomi\Desktop\UBB-Third-Year\programare paralela\lab7\Lab7\obj\Debug\netcoreapp3.1\Lab7.csproj.CopyComplete
+C:\Users\leomi\Desktop\UBB-Third-Year\programare paralela\lab7\Lab7\obj\Debug\netcoreapp3.1\Lab7.dll
+C:\Users\leomi\Desktop\UBB-Third-Year\programare paralela\lab7\Lab7\obj\Debug\netcoreapp3.1\Lab7.pdb
+C:\Users\leomi\Desktop\UBB-Third-Year\programare paralela\lab7\Lab7\obj\Debug\netcoreapp3.1\Lab7.genruntimeconfig.cache

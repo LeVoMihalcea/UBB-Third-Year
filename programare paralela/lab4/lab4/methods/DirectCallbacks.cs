@@ -68,7 +68,6 @@ namespace lab4.methods
 
             // complete the connection  
             clientSocket.EndConnect(ar);
-            Console.WriteLine("{0} --> Socket connected to {1} ({2})", clientId, hostname, clientSocket.RemoteEndPoint);
 
             // convert the string data to byte data using ASCII encoding.  
             var byteData = Encoding.ASCII.GetBytes(HttpUtils.getRequestString(state.hostname, state.endpoint));
@@ -85,7 +84,6 @@ namespace lab4.methods
 
             // complete sending the data to the server  
             var bytesSent = clientSocket.EndSend(ar);
-            Console.WriteLine("{0} --> Sent {1} bytes to server.", clientId, bytesSent);
 
             // receive the response from the server
             // begin receiving the data from the server
@@ -132,9 +130,6 @@ namespace lab4.methods
                         // write the response details to the console
                         foreach (var i in state.responseContent.ToString().Split('\r', '\n'))
                             Console.WriteLine(i);
-                        Console.WriteLine(
-                            "{0} --> Response received : expected {1} chars in body, got {2} chars (headers + body)",
-                            clientId, contentLengthHeaderValue, state.responseContent.Length);
 
                         // release the socket
                         clientSocket.Shutdown(SocketShutdown.Both);

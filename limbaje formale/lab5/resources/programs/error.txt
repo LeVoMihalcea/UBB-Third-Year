@@ -1,0 +1,18 @@
+len: int = readInt();
+1k: int = -0;
+v: int[lem];
+
+while (1k < len) {
+   v[1k] = readInt();
+   1k = 1k + 1;
+}
+
+n: int = readInt();
+sum: int = 0;
+
+while (i < len) {
+   sum = sum + v[i];
+   i = i + 1;
+}
+
+print("Sum is " + sum);

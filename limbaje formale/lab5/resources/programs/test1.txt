@@ -1,0 +1,11 @@
+a: int = readInt();
+b: int = readInt();
+c: int = readInt();
+if (a <= b && a <= c) {
+    write(a);
+}
+else if (b <= c) {
+    write(b);
+} else {
+    write(c);
+}

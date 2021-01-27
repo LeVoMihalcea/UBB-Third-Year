@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Istvan\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Istvan\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Lab8.-948293852.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Istvan\source\repos\Lab8" t="IncludeFlat">
+      <e p="Lab8" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Lab8.csproj" t="IncludeRecursive" />
+        <e p="Listener.cs" t="Include" />
+        <e p="MainProgram.cs" t="Include" />
+        <e p="model" t="Include">
+          <e p="DSM.cs" t="Include" />
+          <e p="Message.cs" t="Include" />
+          <e p="SubscribeMessage.cs" t="Include" />
+          <e p="UpdateMessage.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Lab8.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Lab8.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

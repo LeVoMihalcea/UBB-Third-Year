@@ -1,0 +1,16 @@
+len: int = readInt();
+k: int = 0;
+v: int[len];
+while (k < len) {
+    v[k] = readInt();
+    k = k + 1;
+}
+
+n: int = readInt();
+i: int = 0;
+while (i < len) {
+    if (v[i] == n) {
+        println(v[i]);
+    }
+    i = i + 1;
+}

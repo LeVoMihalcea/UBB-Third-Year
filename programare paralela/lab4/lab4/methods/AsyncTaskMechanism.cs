@@ -60,11 +60,6 @@ namespace lab4.methods
             // receive the response from the server
             await ReceiveWrapper(state);
 
-            // write the response details to the console
-            Console.WriteLine(
-                "{0} --> Response received : expected {1} chars in body, got {2} chars (headers + body)", 
-                id, HttpUtils.getContentLength(state.responseContent.ToString()), state.responseContent.Length);
-
             // release the socket
             client.Shutdown(SocketShutdown.Both);
             client.Close();
@@ -85,8 +80,6 @@ namespace lab4.methods
 
             // complete the connection  
             clientSocket.EndConnect(ar);
-
-            Console.WriteLine("{0} --> Socket connected to {1} ({2})", clientId, hostname, clientSocket.RemoteEndPoint);
 
             // signal that the connection has been made 
             state.connectDone.Set();
@@ -109,7 +102,6 @@ namespace lab4.methods
 
             // complete sending the data to the server  
             var bytesSent = clientSocket.EndSend(ar);
-            Console.WriteLine("{0} --> Sent {1} bytes to server.", clientId, bytesSent);
 
             // signal that all bytes have been sent
             state.sendDone.Set();

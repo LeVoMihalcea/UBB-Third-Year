@@ -1,0 +1,11 @@
+n: int = readInt();
+if (n < 1) {
+    return False;
+}
+i: int = 2;
+while (i < n/2) {
+    if (n % i == 0) {
+        return 0;
+    }
+    i = i + 1;
+}

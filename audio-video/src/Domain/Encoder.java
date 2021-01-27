@@ -34,8 +34,8 @@ public class Encoder {
         MatrixHelper.centerAround0(encodedV);
 
         dct(encodedY);
-        dct(encodedY);
-        dct(encodedY);
+        dct(encodedU);
+        dct(encodedV);
 
         quantization(encodedY);
         quantization(encodedU);
