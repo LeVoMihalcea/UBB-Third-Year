@@ -1,0 +1,1 @@
+n = 10;hold on;for i = 1:n  plot(t, Cheb(i, t));end
